@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.w-47vw {
+    width: 47vw;
+}
+
+.h-25vh {
+    height: 25vh;
+}

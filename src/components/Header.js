@@ -13,10 +13,25 @@ const Header = () => (
         <path d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z" />
       </svg>
     </a>
-    <h1 className="items-center">
-      Weather Application
-    </h1>
-    <div className="flex items-center justify-between gap-3">
+    <h1 className="items-center">Weather App</h1>
+    <div className="flex items-center  justify-between gap-3">
+      <div className="bg-slate-600 flex">
+        <svg
+          className="w-4 flex items-center text-2xl rounded"
+          focusable="false"
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          data-testid="SearchIcon"
+          fill="currentColor"
+        >
+          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+        </svg>
+        <input
+          className=" bg-slate-600 pl-2 w-20"
+          placeholder="Search..."
+          type="text"
+        />
+      </div>
       <svg
         stroke="currentColor"
         fill="currentColor"

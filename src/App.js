@@ -1,14 +1,20 @@
+/** @format */
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Filter from './components/Filter';
 import Header from './components/Header';
-import Card from './components/Card';
+import Country from './pages/Country';
+import Weather from './pages/Weather';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Header />
       <Filter />
-      <Card />
-    </div>
+      <Routes>
+        <Route path="/" element={<Country />} />
+        <Route path="/weather/:country" element={<Weather />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

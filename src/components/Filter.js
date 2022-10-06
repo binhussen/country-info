@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { filterCountries } from '../redux/countries';
+import { filterCountries } from '../redux/countries/countries';
 
 const Filter = () => {
   const dispatch = useDispatch();

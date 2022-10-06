@@ -4,11 +4,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Card from '../components/Card';
 import Filter from '../components/Filter';
-import { filterCountries } from '../redux/countries';
-
-/* <div
-className="border-x-slate-400 rounded-full mx-auto animate-spin  w-24 h-24 my-24"
-/> */
+import { filterCountries } from '../redux/countries/countries';
 
 const Country = () => {
   const dispatch = useDispatch();

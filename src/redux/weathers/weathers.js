@@ -8,7 +8,7 @@ const API_KEY = 'f94c9a10893c1d0e6b777c96082f4a4b';
 
 const GET_COUNTRY_WEATHER = 'weather/weather/GET_COUNTRY_WEATHER';
 
-export default function countryReducer(state = [], action) {
+export default function weatherReducer(state = [], action) {
   switch (action.type) {
     case `${GET_COUNTRY_WEATHER}/fulfilled`:
       return [...action.payload];
@@ -19,5 +19,12 @@ export default function countryReducer(state = [], action) {
 
 export const getWeathers = createAsyncThunk(GET_COUNTRY_WEATHER, async (country) => {
   const response = await axios.get(`${API_URL}?q=${country}&appid=${API_KEY}`);
-  return response.data;
+  const weathers = response.data.map((country) => ({
+    weather: country.weather,
+    main: country.main,
+    wind: country.wind,
+    rain: country.rain,
+    clouds: country.clouds,
+  }));
+  return weathers;
 });

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { searchCountries } from '../redux/countries';
+import { searchCountries } from '../redux/countries/countries';
 
 const Header = () => {
   const dispatch = useDispatch();

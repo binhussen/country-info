@@ -100,6 +100,11 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgments
+
+- Microverse Curriculum
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for this [design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
+
   
 
 ## 📝 License

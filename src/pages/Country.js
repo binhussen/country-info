@@ -19,20 +19,20 @@ const Country = () => {
   }, []);
 
   return (
-		<section className="min-h-screen">
-			<div className="bg-slate-500 text-white p-3 uppercase flex justify-between">
-				<h2>World Countries</h2>
-					<Filter />
-			</div>
-			<div className="grid grid-cols-2 justify-center">
-				{countries.map((country) => (
-					<Card
-						key={country.code}
-						country={country}
-					/>
-				))}
-			</div>
-		</section>
-	);
+    <section className="min-h-screen">
+      <div className="bg-slate-500 text-white p-3 uppercase flex justify-between">
+        <h2>World Countries</h2>
+        <Filter />
+      </div>
+      <div className="grid grid-cols-2 justify-center">
+        {countries.map((country) => (
+          <Card
+            key={country.code}
+            country={country}
+          />
+        ))}
+      </div>
+    </section>
+  );
 };
 export default Country;

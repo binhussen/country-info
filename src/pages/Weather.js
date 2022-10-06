@@ -12,7 +12,7 @@ const Weather = () => {
   const language = Object.values(languages);
   return (
     <section className="min-h-screen bg-slate-400">
-      <div className="bg-slate-500 text-white p-3 uppercase flex justify-between">
+      <div className="bg-slate-500 text-white p-3 flex justify-between">
         <h2>
           {common}
           {' '}

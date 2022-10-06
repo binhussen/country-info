@@ -1,18 +1,12 @@
 const Filter = () => (
-  <section className="text-white p-5 bg-gradient-to-r bg-slate-400">
-    <div className="h-11 rounded bg-slate-600 self-center flex mx-8 pl-4">
-      <svg
-        className=" w-4 flex items-center text-2xl rounded"
-        focusable="false"
-        aria-hidden="true"
-        viewBox="0 0 24 24"
-        data-testid="SearchIcon"
-        fill="currentColor"
-      >
-        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-      </svg>
-      <input className="text-white bg-slate-600 pl-4" placeholder="Search..." type="text" />
-    </div>
-  </section>
+	<select
+		className="w-32 bg-slate-400 text-white rounded outline-none items-center"
+		name="select">
+		<option value="africa">Africa</option>
+		<option value="america">America</option>
+		<option value="asia">Asia</option>
+		<option value="europe">Europe</option>
+		<option value="oceania">Oceania</option>
+	</select>
 );
 export default Filter;

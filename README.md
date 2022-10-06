@@ -5,8 +5,7 @@
 >Countries weather is a webapp that will be working with the real live data from the [rest countries api](https://restcountries.com/#rest-countries) and [openweather api](https://openweathermap.org/api). The application will allow users to get detail information of the country and weather.
 ## Live Demo
 
-> LIve Demo [here](https://633edea6d97b900084493a6a--country-weathers.netlify.app/)
-
+> LIve Demo [here](https://country-weathers.netlify.app/)
 
 ## Built With
 

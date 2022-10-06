@@ -1,10 +1,15 @@
+/** @format */
+
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Card = ({ country }) => {
   const { name, area } = country;
   const { common, nativeName } = name;
-  let localName = nativeName ? nativeName[Object.keys(nativeName)[0]].common : '';
-  localName =		common.toString().toLowerCase() === localName.toLowerCase() ? '' : localName;
+  let localName = nativeName
+    ? nativeName[Object.keys(nativeName)[0]].common
+    : '';
+  localName = common.toString().toLowerCase() === localName.toLowerCase() ? '' : localName;
   return (
     <Link
       className="text-white transition-shadow opacity-100 bg bg-slate-400 shadow-2xl"
@@ -43,6 +48,18 @@ const Card = ({ country }) => {
       </div>
     </Link>
   );
+};
+
+Card.propTypes = {
+  country: PropTypes.shape({
+    name: PropTypes.shape({
+      common: PropTypes.string,
+      nativeName: PropTypes.shape({
+        common: PropTypes.string,
+      }),
+    }),
+    area: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Card;

@@ -3,13 +3,15 @@ import { useLocation } from 'react-router-dom';
 const Weather = () => {
   const location = useLocation();
   const {
-    name, code, currency, capital, region, subregion, languages, borders, area, map, population, timezones, flag,
+    name, code, currency, capital, region, subregion,
+    languages, borders, area, map, population, timezones,
   } = location.state;
   const { common, official, nativeName } = name;
   const nativeOfficial = Object.values(nativeName)[0].official;
   const { name: currencyName, symbol: currencySymbol } = Object.values(currency)[0];
   const capitalName = Object.values(capital)[0];
   const language = Object.values(languages);
+
   return (
     <section className="min-h-screen bg-slate-400">
       <div className="bg-slate-500 text-white p-3 flex justify-between">
@@ -110,10 +112,6 @@ const Weather = () => {
           :
           {timezones[0]}
         </p>
-        {/* <p>
-					flag:
-					{flag}
-				</p> */}
       </div>
     </section>
   );

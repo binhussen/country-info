@@ -5,8 +5,7 @@
 >Countries weather is a webapp that will be working with the real live data from the [rest countries api](https://restcountries.com/#rest-countries) and [openweather api](https://openweathermap.org/api). The application will allow users to get detail information of the country and weather.
 ## Live Demo
 
-> coming soon ...
-
+> LIve Demo [here](https://country-weathers.netlify.app/)
 
 ## Built With
 
@@ -100,6 +99,11 @@ Feel free to check the [issues page](../../issues/).
   
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse Curriculum
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for this [design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 
   
 

@@ -7,7 +7,7 @@ const Card = ({ country }) => {
   localName =		common.toString().toLowerCase() === localName.toLowerCase() ? '' : localName;
   return (
     <Link
-      className="text-white transition-shadow opacity-100 bg-slate-500"
+      className="text-white transition-shadow opacity-100 bg bg-slate-400 shadow-2xl"
       to={`/weather/${common}`}
       state={country}
     >

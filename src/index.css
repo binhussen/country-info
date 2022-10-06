@@ -3,15 +3,23 @@
 @tailwind utilities;
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .w-47vw {
-    width: 47vw;
+  width: 47vw;
 }
 
 .h-25vh {
-    height: 25vh;
+  height: 25vh;
+}
+
+.bg:nth-child(4n-1) {
+  background-color: #64748b;
+}
+
+.bg:nth-child(4n-2) {
+  background-color: #64748b;
 }

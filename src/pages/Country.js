@@ -22,7 +22,7 @@ const Country = () => {
         <h2>World Countries</h2>
         <Filter />
       </div>
-      <div className="grid grid-cols-2 justify-center">
+      <div className="grid grid-cols-2 md:grid-cols-4 justify-center">
         {countries.map((country) => (
           <Card
             key={country.code}

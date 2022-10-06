@@ -58,7 +58,7 @@ Card.propTypes = {
         common: PropTypes.string,
       }),
     }),
-    area: PropTypes.string.isRequired,
+    area: PropTypes.number.isRequired,
   }).isRequired,
 };
 
